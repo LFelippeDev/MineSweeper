@@ -28,7 +28,7 @@ const formatNumber = (number: number) =>
 const TimerContext = createContext<TimerContextData>(DEFAULT_CONTEXT_DATA);
 
 const TimerProvider = ({ children }) => {
-  const [timeSpent, setTimeSpent] = useState(7155);
+  const [timeSpent, setTimeSpent] = useState(0);
   const [nodeIntervalId, setNodeIntervalId] = useState<NodeJS.Timeout | null>(
     null
   );
